@@ -12,6 +12,22 @@ The algorithm includes the following main steps:
 2.	Sort the _n_ distances while preserving their original indices in _S_.  
 3.	Return the _k_ points from _S_ corresponding to the lowest distances of the sorted distance array.  
 	
+Further details can be found in the following paper. If you find this work useful for your research, please consider citing:
+  
+   
+    @ARTICLE{7859319, 
+        author={F. B. Muslim and L. Ma and M. Roozmeh and L. Lavagno}, 
+        journal={IEEE Access}, 
+        title={Efficient FPGA Implementation of OpenCL High-Performance Computing Applications via High-Level Synthesis}, 
+        year={2017}, 
+        volume={5}, 
+        pages={2747-2762}, 
+        doi={10.1109/ACCESS.2017.2671881}, 
+        }
+     
+
+	
+	
 ## Getting Started:
 The repository contains three directories, namely "data", "knn\_cpu" and "knn\_fpga". The "data" directory contains a file with a sample set of reference data points. The "knn\_cpu" and "knn\_fpga" directories contain two different implementations of the KNN algorithm, in which the nearest neighbor identification is done on the CPU and FPGA respectively. Each implementation contains the OpenCL code of the algorithm along with the required host code and the Tcl script used to run the example in SDAccel. 
    
